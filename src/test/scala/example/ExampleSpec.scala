@@ -1,7 +1,7 @@
 package example
-import org.scalatest.FreeSpec
+import org.scalatest.freespec.AnyFreeSpec
 
-class ExampleSpec extends FreeSpec {
+class ExampleSpec extends AnyFreeSpec {
   "test" in {
     fail()
   }

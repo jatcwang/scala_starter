@@ -6,4 +6,3 @@ class ExampleSpec extends AnyFreeSpec {
     fail()
   }
 }
-

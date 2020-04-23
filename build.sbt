@@ -10,7 +10,7 @@ lazy val root = Project("root", file("."))
 
 lazy val commonSettings = Seq(
   version := "0.1.0",
-  scalaVersion := "2.13.1",
+  scalaVersion := "2.13.2",
   scalacOptions --= {
     if (sys.env.get("CI").isDefined) {
       Seq.empty

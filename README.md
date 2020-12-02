@@ -1,1 +1,1 @@
-Example starter project with Scala
+Subset - typeclass for identifying when a type is subset of another type

@@ -3,7 +3,7 @@ lazy val root = Project("root", file("."))
   .settings(
     name := "Scala Starter",
     libraryDependencies ++= Seq(
-      "org.typelevel" %% "cats-core" % "2.3.0",
+      "org.typelevel" %% "cats-core" % "2.3.1",
       "org.scalatest" %% "scalatest" % "3.2.3" % Test,
     ),
   )

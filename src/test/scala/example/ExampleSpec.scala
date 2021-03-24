@@ -1,12 +1,10 @@
 package example
-import org.scalatest.freespec.AnyFreeSpec
 
-class ExampleSpec extends AnyFreeSpec {
-  "test fail" in {
-    fail("simulated test failure")
-  }
+import munit.FunSuite
 
-  "test succeed" in {
-    succeed
+class ExampleSpec extends FunSuite {
+
+  test("test fail") {
+    assert(false)
   }
 }

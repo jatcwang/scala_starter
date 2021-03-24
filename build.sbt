@@ -4,13 +4,13 @@ lazy val root = Project("root", file("."))
     name := "Scala Starter",
     libraryDependencies ++= Seq(
       "org.typelevel" %% "cats-core" % "2.4.2",
-      "org.scalatest" %% "scalatest" % "3.2.5" % Test,
+      "org.scalameta" %% "munit" % "0.7.22" % Test,
     ),
   )
 
 lazy val commonSettings = Seq(
   version := "0.1.0",
-  scalaVersion := "2.13.4",
+  scalaVersion := "2.13.5",
   scalacOptions --= {
     if (sys.env.get("CI").isDefined) {
       Seq.empty

@@ -1,0 +1,15 @@
+on:
+  push:
+    branches:
+      - "**"
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: coursier/setup-action
+        jvm: temurin:11
+      - name: Lint & Test
+        run: sbt scalafmtSbtCheck scalafmtCheckAll test scripted

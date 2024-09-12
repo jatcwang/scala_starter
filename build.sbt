@@ -1,3 +1,7 @@
+import org.typelevel.sbt.tpolecat.DevMode
+
+ThisBuild / tpolecatDefaultOptionsMode := DevMode
+
 lazy val root = Project("root", file("."))
   .settings(commonSettings)
   .settings(
@@ -10,12 +14,5 @@ lazy val root = Project("root", file("."))
 
 lazy val commonSettings = Seq(
   version := "0.1.0",
-  scalaVersion := "3.4.1",
-  scalacOptions --= {
-    if (sys.env.get("CI").isDefined) {
-      Seq.empty
-    } else {
-      Seq("-Xfatal-warnings")
-    }
-  },
+  scalaVersion := "3.5.0",
 )
